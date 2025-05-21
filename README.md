@@ -7,7 +7,7 @@ Questa applicazione è stata creata per scopi didattici e dimostra le vulnerabil
 ## Funzionalità
 
 - Login vulnerabile (tautologia)
-- Dashboard con elenco parziale degli utenti
+- Dashboard con elenco parziale dei dati degli utenti
 - Form di ricerca email vulnerabile a:
   - UNION SELECT
   - Esfiltrazione dati da `information_schema`
