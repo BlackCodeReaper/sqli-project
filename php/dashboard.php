@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-$query = "SELECT id, email, ruolo FROM utenti";
+$query = "SELECT nome, cognome, email, telefono, ruolo FROM utenti";
 $result = $conn->query($query);
 ?>
 

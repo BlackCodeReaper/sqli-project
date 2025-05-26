@@ -14,7 +14,7 @@ services:
     container_name: sqli-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: sqli_demo
+      MYSQL_DATABASE: sqli_project
     ports:
       - "3307:3306"
     volumes:

