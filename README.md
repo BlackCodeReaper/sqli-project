@@ -29,8 +29,8 @@ Questa applicazione è stata creata per scopi didattici e dimostra le vulnerabil
 1. Clona il progetto
 
 ```bash
-git clone https://github.com/tuo-utente/sql-injection-demo.git
-cd sql-injection-demo
+git clone https://github.com/BlackCodeReaper/sqli-project.git
+cd sqli-project
 ```
 
 2. Avvia i container

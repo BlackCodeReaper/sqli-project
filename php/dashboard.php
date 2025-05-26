@@ -9,21 +9,23 @@ $result = $conn->query($query);
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard - SQLi Demo</title>
+    <title>Dashboard - SQLi Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lista utenti (dati pubblici)</h1>
+    <h1>Lista utenti (dati pubblici per utenti autentificati)</h1>
 
     <?php
     if ($result && $result->num_rows > 0) {
         echo "<table border='1' cellpadding='5'>";
-        echo "<tr><th>ID</th><th>Email</th><th>Ruolo</th></tr>";
+        echo "<tr><th>Nome</th><th>Cognome</th><th>Email</th><th>Telefono</th><th>Ruolo</th></tr>";
 
         while ($row = $result->fetch_assoc()) {
             echo "<tr>";
-            echo "<td>" . htmlspecialchars($row['id']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['nome']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['cognome']) . "</td>";
             echo "<td>" . htmlspecialchars($row['email']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['telefono']) . "</td>";
             echo "<td>" . htmlspecialchars($row['ruolo']) . "</td>";
             echo "</tr>";
         }

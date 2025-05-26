@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Login - SQLi Demo</title>
+    <title>Login - SQLi Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>

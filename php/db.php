@@ -1,6 +1,6 @@
 <?php
 $host = 'db'; // nome del servizio nel docker-compose
-$db   = 'sqli_demo';
+$db   = 'sqli_project';
 $user = 'root';
 $pass = 'root';
 $charset = 'utf8mb4';
