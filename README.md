@@ -24,6 +24,16 @@ Questa applicazione è stata creata per scopi didattici e dimostra le vulnerabil
 
 ---
 
+## Requisiti
+
+Per eseguire correttamente il progetto sono necessari i seguenti strumenti:
+
+- Docker Desktop installato e funzionante sul proprio sistema (macOS, Windows o Linux). Docker viene utilizzato per creare ed eseguire i container dell’applicazione e del database.
+- Docker Compose deve essere disponibile nel sistema. Nella maggior parte dei casi è incluso direttamente in Docker Desktop, ma in ambienti Linux potrebbe essere necessario installarlo separatamente.
+-	Database MariaDB o MySQL: il progetto utilizza MariaDB (via container Docker), ma è compatibile anche con MySQL. Il database viene inizializzato automaticamente tramite uno script SQL (init.sql) incluso nel progetto, quindi non è necessaria alcuna configurazione manuale.
+
+---
+
 ## Avvio dell'applicazione
 
 1. Clona il progetto
