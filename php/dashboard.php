@@ -13,7 +13,7 @@ $result = $conn->query($query);
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lista utenti (dati pubblici per utenti autentificati)</h1>
+    <h1>Dashboard</h1>
 
     <?php
     if ($result && $result->num_rows > 0) {

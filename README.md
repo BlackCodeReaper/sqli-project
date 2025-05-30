@@ -6,8 +6,8 @@ Questa applicazione è stata creata per scopi didattici e dimostra le vulnerabil
 
 ## Funzionalità
 
-- Login vulnerabile (tautologia)
-- Dashboard con elenco parziale dei dati degli utenti
+- Login vulnerabile (tautologia/EOL comment )
+- Dashboard con elenco dei dati parziali degli utenti
 - Form di ricerca email vulnerabile a:
   - UNION SELECT
   - Esfiltrazione dati da `information_schema`
@@ -58,6 +58,12 @@ L'app sarà disponibile su `http://localhost:8080/login.html`
 Tautologia:
 ```
 Username: ' OR 1=1 #
+Password: qualsiasi
+```
+
+EOL Comment:
+```
+Username: admin' #
 Password: qualsiasi
 ```
 
